@@ -185,10 +185,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalking
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7592653888209934963}
   m_Solo: 0
@@ -198,7 +195,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.7413793
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -262,12 +259,6 @@ AnimatorController:
   m_Name: Kate
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: isWalking
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: isJumping
     m_Type: 9
     m_DefaultFloat: 0
@@ -281,6 +272,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: isPunching
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: isWalking
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -338,7 +335,7 @@ AnimatorStateMachine:
     m_Position: {x: 458.77408, y: -68.28125, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4005013167304644683}
-    m_Position: {x: 268.08896, y: 260.56494, z: 0}
+    m_Position: {x: 270, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1045364266734707142}
     m_Position: {x: 527.2837, y: 282.25964, z: 0}
@@ -382,7 +379,7 @@ AnimatorState:
   m_Motion: {fileID: -203655887218126122, guid: c4dd8a2a6147940c9b35fd10fd96672b,
     type: 3}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: speed
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
